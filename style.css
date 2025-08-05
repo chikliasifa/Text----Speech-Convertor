@@ -6,73 +6,80 @@
 }
 
 body {
-  background: linear-gradient(135deg, #f8e1f4, #fdf6f0); /* Soft lavender + cream */
+  background: linear-gradient(135deg, #f6d5f7, #fbe9d7); /* Elegant peach-pink */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
-  padding: 20px;
   color: #333;
 }
 
 .container {
   width: 90%;
-  max-width: 650px;
+  max-width: 600px;
   text-align: center;
+  margin-top: 50px;
 }
 
 h1 {
+  font-size: 32px;
+  color: #4e3a55;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6e5a74;
   margin-bottom: 25px;
-  color: #5a4e6b;
-  font-size: 28px;
 }
 
 .card {
   background: #ffffff;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 textarea {
   width: 100%;
-  height: 80px;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #d1c4d7;
+  height: 100px;
+  margin: 15px 0;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e0c9ea;
   outline: none;
   resize: none;
   font-size: 16px;
   background: #fafafa;
+  transition: border 0.3s ease-in-out;
+}
+
+textarea:focus {
+  border: 1px solid #c78cd9;
 }
 
 .gradient-btn {
-  background: linear-gradient(135deg, #e7b9f6, #fbc2eb); /* Soft lavender-pink */
-  color: #fff;
+  background: linear-gradient(135deg, #d08cfb, #fca6d1); /* Pink-purple gradient */
+  color: white;
   border: none;
-  padding: 12px 20px;
-  margin-top: 10px;
-  border-radius: 25px;
+  padding: 14px 22px;
+  border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .gradient-btn:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #d8a9f1, #f7a8d8);
+  transform: scale(1.07);
+  background: linear-gradient(135deg, #bb78e0, #f088b7);
 }
 
-#outputText {
-  background: #fafafa;
-  color: #444;
-  padding: 12px;
-  border-radius: 8px;
-  min-height: 50px;
-  margin-top: 10px;
-  border: 1px solid #e1d5e9;
-  font-size: 15px;
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #7b678b;
+  margin-bottom: 10px;
 }
