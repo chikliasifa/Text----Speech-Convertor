@@ -6,7 +6,16 @@
 }
 
 body {
-  background: linear-gradient(135deg, #f6d5f7, #fbe9d7); /* Elegant peach-pink */
+  /* layered radial gradients to recreate the soft pastel spread */
+  background-color: #fff;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(251,194,235,0.95) 0%, rgba(251,194,235,0.0) 40%),
+    radial-gradient(circle at 50% 35%, rgba(255,233,210,0.95) 0%, rgba(255,233,210,0.0) 40%),
+    radial-gradient(circle at 85% 25%, rgba(210,230,255,0.95) 0%, rgba(210,230,255,0.0) 45%),
+    linear-gradient(180deg, rgba(255,255,255,0.85), rgba(255,255,255,0.9));
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* keep your layout settings */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +23,7 @@ body {
   min-height: 100vh;
   color: #333;
 }
+
 
 .container {
   width: 90%;
